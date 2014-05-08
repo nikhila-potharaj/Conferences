@@ -1,13 +1,22 @@
-package model;
+/**
+ * The following code is a copy of the Sample.java file posted on the website:
+ * 
+ * https://bitbucket.org/xerial/sqlite-jdbc/overview
+ * 
+ * Additional comments were written by Kirsten. This is a reference only and
+ * will not be included in the final project.
+ */
+
+
+package control;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 
-public class ModelMain
+public class ControllerExample
 {
 	public static void main(String[] args) throws ClassNotFoundException
 	{
@@ -18,7 +27,7 @@ public class ModelMain
 		try
 		{
 			// create a database connection
-			connection = DriverManager.getConnection("jdbc:sqlite:TestDB");
+			connection = DriverManager.getConnection("jdbc:sqlite:TestDB.sqlite");
 			Statement statement = connection.createStatement();
 			statement.setQueryTimeout(30);  // set timeout to 30 sec.
 
