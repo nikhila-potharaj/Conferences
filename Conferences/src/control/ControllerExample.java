@@ -36,6 +36,7 @@ public class ControllerExample
 			statement.executeUpdate("insert into person values(1, 'leo')");
 			statement.executeUpdate("insert into person values(2, 'yui')");
 			
+		
 			// "INSERT INTO users (name, email) VALUES ('" + theName + "', '" + theEmail + '");"
 			
 			// "INSERT INTO users (name, email) VALUES (?, ?)
