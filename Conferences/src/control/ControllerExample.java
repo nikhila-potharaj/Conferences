@@ -16,10 +16,21 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import model.Conference;
+
 public class ControllerExample
 {
+	
+	private static void test1() throws ClassNotFoundException {
+		Conference testConference = new Conference();
+		ConferenceControl.createConference(testConference);
+	}
+	
+	
 	public static void main(String[] args) throws ClassNotFoundException
 	{
+		test1();
+/*		
 		// load the sqlite-JDBC driver using the current class loader
 		Class.forName("org.sqlite.JDBC");
 		//this is a change
@@ -80,8 +91,9 @@ public class ControllerExample
 				// connection close failed.
 				System.err.println(e);
 			}
-		}
+		} */
 	}
+	
 }
 //
 //if (has_review_access == true) {
